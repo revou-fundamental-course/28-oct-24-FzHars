@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMI Kalkulator</title>
+    <link rel="icon" href="./img/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header-top">
-      <p class="headerr">BMI</p>
+      <div class="container">
+        <a class="head-link" href="#">
+          <img src="./img/logo.png" alt="" />
+          <p class="headerr">BMI</p>
+        </a>
+      </div>
     </header>
     <main>
       <!-- section form input -->
@@ -32,10 +38,20 @@
           <fieldset>
             <legend>Jenis Kelamin :</legend>
             <label for="Laki"
-              ><input type="radio" name="jk" value="Laki-laki" id="Laki" />Laki-laki</label
+              ><input
+                type="radio"
+                name="jk"
+                value="Laki-laki"
+                id="Laki"
+              />Laki-laki</label
             >
             <label for="Wanita"
-              ><input type="radio" name="jk" value="Wanita" id="Wanita" />Wanita</label
+              ><input
+                type="radio"
+                name="jk"
+                value="Wanita"
+                id="Wanita"
+              />Wanita</label
             >
           </fieldset>
           <!-- Last Radio jenis kelamin -->
@@ -143,21 +159,23 @@
           <!-- Hasil dari input -->
           <div class="calc text-center">
             <p id="result-angka">00.00</p>
-            <h4 id="result-kategori">-<br><br></h4>
+            <h4 id="result-kategori">-<br /><br /></h4>
             <button class="btn-download d-none">Download hasil BMI</button>
           </div>
           <article>
             <!-- keterangan yang akan muncul dari hasil input -->
             <p id="result-keterangan" class="text-justify line-h">
-              <br><br><br>
+              <br /><br /><br />
             </p>
             <div class="btn-group">
               <button class="btn-ahli d-none">
                 Konsultasi Ahli Gizi Via Aplikasi
               </button>
-              <button class="btn-ahli d-none">Registrasi Online Ahli Gizi</button>
+              <button class="btn-ahli d-none">
+                Registrasi Online Ahli Gizi
+              </button>
             </div>
-            <hr>
+            <hr />
             <p class="text-justify">
               Indeks massa tubuh (BMI) tidak selalu menjadi ukuran kesehatan
               yang akurat. BMI tidak sepenuhnya mewakili diagnosis menyeluruh
