@@ -8,21 +8,6 @@
   --bg-form: #a0aec2b4;
   --btn-color: #8197b6;
   --bg-button: #31d6f0;
-  .color1 {
-    color: #060606;
-  }
-  .color2 {
-    color: #1f242d;
-  }
-  .color3 {
-    color: #4a5c6f;
-  }
-  .color4 {
-    color: #8197b6;
-  }
-  .color5 {
-    color: #b0d7e5;
-  }
 }
 body {
   margin: 0;
@@ -97,7 +82,7 @@ article ul {
 article ul li {
   margin-bottom: 5px;
 }
-/* button form */
+/* button */
 button {
   display: flex;
   justify-content: center;
@@ -162,6 +147,7 @@ footer {
   color: white;
   background-color: var(--bg-header);
 }
+/* footer image in footer */
 .download-img {
   display: flex;
   justify-content: center;
