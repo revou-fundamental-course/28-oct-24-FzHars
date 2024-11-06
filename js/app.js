@@ -49,6 +49,7 @@ function result() {
     resultKeterangan.innerHTML = `Hasil BMI : Di atas <span style="border-bottom: 2px solid red; font-weight: bold; font-size: 1.3rem;">30</span><br>Jenis kelamin : ${jenisKelamin.value}<br>Usia :${usia}<br> Anda berada dalam kategori obesitas. Anda dianjurkan untuk menurunkan berat badan hingga batas normal dengan berkonsultasi kepada ahli gizi dan dokter.`;
   }
 }
+
 // fungsi reset form, r-angka, r-kategori, r-keterangan
 function resetAll() {
   document.getElementById("form-input").reset();
