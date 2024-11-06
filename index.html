@@ -85,7 +85,8 @@
           </fieldset>
           <!-- Last Input tinggi badan -->
 
-          <button type="button" id="hitungF" onclick="result()">Hitung</button>
+          <!-- <button type="button" id="hitungF" onclick="result()">Hitung</button> -->
+          <button type="button" id="hitungF">Hitung</button>
           <button type="button" id="resetF" onclick="resetAll()">Reset</button>
         </form>
         <!-- last form -->
@@ -137,14 +138,13 @@
       <section>
         <div>
           <header>
-            <h1>Hasil</h1>
+            <h1>Hasil Kalkulasi</h1>
           </header>
           <!-- Hasil dari input -->
           <div class="calc text-center">
-            <h3>Kalkulasi</h3>
             <p id="result-angka">00.00</p>
-            <h4 id="result-kategori">Kategori</h4>
-            <button class="btn-download">Download hasil BMI</button>
+            <h4 id="result-kategori">-<br><br></h4>
+            <button class="btn-download d-none">Download hasil BMI</button>
           </div>
           <article>
             <!-- keterangan yang akan muncul dari hasil input -->
@@ -152,10 +152,10 @@
               <br><br><br>
             </p>
             <div class="btn-group">
-              <button class="btn-Ahli">
+              <button class="btn-ahli d-none">
                 Konsultasi Ahli Gizi Via Aplikasi
               </button>
-              <button class="btn-Ahli">Registrasi Online Ahli Gizi</button>
+              <button class="btn-ahli d-none">Registrasi Online Ahli Gizi</button>
             </div>
             <hr>
             <p class="text-justify">

@@ -13,6 +13,18 @@ body {
   margin: 0;
   scroll-behavior: smooth;
 }
+.text-center {
+  text-align: center;
+}
+.text-justify {
+  text-align: justify;
+}
+.line-h {
+  line-height: 2;
+}
+.d-none{
+  display: none;
+}
 .header-top {
   display: flex;
   padding: 7px 10px;
@@ -124,15 +136,7 @@ input[type="number"],
 .last-section {
   border-radius: 1rem;
 }
-.text-center {
-  text-align: center;
-}
-.text-justify {
-  text-align: justify;
-}
-.line-h {
-  line-height: 2;
-}
+
 /* hasil angka tampilan */
 #result-angka {
   font-weight: bold;
