@@ -7,19 +7,22 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <header class="header-top">
+      <p class="headerr">BMI</p>
+    </header>
     <main>
       <!-- section form input -->
       <section>
-        <div class="">
+        <div >
           <header>
-            <h2>Kalkulator BMI</h2>
+            <h1>Kalkulator BMI</h1>
           </header>
           <article>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Repudiandae sit ipsa, excepturi quibusdam fugit laborum aliquam!
-              Saepe exercitationem cupiditate vel libero reiciendis consectetur
-              quisquam repellendus quidem impedit vitae, repellat doloremque.
+            <p class="text-justify">
+              BMI adalah singkatan dari Body Mass Index, yaitu indeks massa
+              tubuh yang digunakan untuk mengukur berat badan ideal seseorang.
+              BMI merupakan cara yang mudah dan murah untuk menentukan kategori
+              berat badan, seperti kurus, normal, gemuk, atau obesitas
             </p>
           </article>
         </div>
@@ -40,8 +43,14 @@
           <!-- Input berat badan  -->
           <fieldset>
             <legend>Berat Badan (kg)</legend>
-            <label for="first-name">
-              <input id="first-name" name="first-name" type="text" required />
+            <label for="berat-badan">
+              <input
+                id="berat-badan"
+                name="berat-badan"
+                type="number"
+                placeholder="Berat badan anda"
+                required
+              />
             </label>
           </fieldset>
           <!-- Last Input berat badan  -->
@@ -49,8 +58,14 @@
           <!-- Input Usia -->
           <fieldset>
             <legend>Usia (tahun)</legend>
-            <label for="last-name">
-              <input id="last-name" name="last-name" type="text" required />
+            <label for="usia">
+              <input
+                id="usia"
+                name="usia"
+                type="number"
+                placeholder="Usia anda"
+                required
+              />
             </label>
           </fieldset>
           <!-- Last input Usia -->
@@ -58,23 +73,60 @@
           <!-- Input tinggi badan -->
           <fieldset>
             <legend>Tinggi Badan (cm)</legend>
-            <label for="email">
-              <input id="email" name="email" type="email" required />
+            <label for="tinggi-badan">
+              <input
+                id="tinggi-badan"
+                name="tinggi-badan"
+                type="number"
+                placeholder="Tinggi badan anda"
+                required
+              />
             </label>
           </fieldset>
           <!-- Last Input tinggi badan -->
+
+          <button type="button" id="hitungF" onclick="result()">Hitung</button>
+          <button type="button" id="resetF" onclick="resetAll()">Reset</button>
         </form>
         <!-- last form -->
         <div class="">
           <header>
-            <h2>Keunggulan fitur</h2>
+            <h1>Keunggulan fitur</h1>
           </header>
           <article>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Voluptates dolores veniam consequuntur vero aliquam illo repellat
-              est minus vel totam. Dolor quo ipsam enim libero, impedit iste
-              deleniti velit nisi.
+              Fitur BMI (Body Mass Index) atau Indeks Massa Tubuh memiliki
+              beberapa keunggulan, di antaranya:
+            </p>
+            <ul>
+              <li>
+                Mengetahui kategori berat badan: BMI dapat menentukan apakah
+                berat badan seseorang termasuk kurus, ideal, berlebihan, atau
+                obesitas.
+              </li>
+              <li>
+                Menilai risiko kesehatan: BMI dapat menjadi alat skrining untuk
+                melihat risiko kesehatan tertentu, seperti diabetes, penyakit
+                jantung, dan tekanan darah tinggi.
+              </li>
+              <li>
+                Menentukan target berat badan: Dengan mengetahui BMI, seseorang
+                dapat menetapkan target berat badan yang sehat dan realistis.
+              </li>
+              <li>
+                Memantau perubahan berat badan: BMI dapat digunakan untuk
+                memantau perubahan berat badan dari waktu ke waktu.
+              </li>
+              <li>
+                Mengetahui proporsi tubuh: BMI dapat memberikan gambaran cepat
+                tentang proporsi tubuh.
+              </li>
+            </ul>
+            <p>
+              Kalkulator akan memberi Anda gambaran tentang perbandingan berat
+              badan Anda dengan nilai umum. Indeks Massa Tubuh Anda (BMI)
+              dihitung sebagai berat badan Anda (dalam kilogram) dibagi dengan
+              kuadrat tinggi badan Anda (dalam meter) atau BMI = kg/m².
             </p>
           </article>
         </div>
@@ -88,21 +140,58 @@
             <h1>Hasil</h1>
           </header>
           <!-- Hasil dari input -->
-          <div class="calc"></div>
+          <div class="calc text-center">
+            <h3>Kalkulasi</h3>
+            <p id="result-angka">00.00</p>
+            <h4 id="result-kategori">Kategori</h4>
+            <button class="btn-download">Download hasil BMI</button>
+          </div>
           <article>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Laboriosam ipsum voluptas aut! Possimus, enim ut?
+            <!-- keterangan yang akan muncul dari hasil input -->
+            <p id="result-keterangan" class="text-justify">
+              <hr>
+            </p>
+            <div class="btn-group">
+              <button class="btn-Ahli">
+                Konsultasi Ahli Gizi Via Aplikasi
+              </button>
+              <button class="btn-Ahli">Registrasi Online Ahli Gizi</button>
+            </div>
+            <p class="text-justify">
+              Indeks massa tubuh (BMI) tidak selalu menjadi ukuran kesehatan
+              yang akurat. BMI tidak sepenuhnya mewakili diagnosis menyeluruh
+              dari kesehatan tubuh dan risiko penyakit seseorang.
             </p>
           </article>
+          <div class="last-section text-center">
+            <h4>Obesitas menyebabkan berbagai penyakit,<br> seperti:</h4>
+            <p class="line-h">
+              Diabetes melitus tipe 2 <br />
+              Hipertensi <br />
+              Penyakit jantung koroner <br />
+              Osteoarthritis <br />
+            </p>
+            <div class="btn-group">
+              <button class="btn-Ahli">Registrasi Online Sekarang</button>
+              <button class="btn-Ahli">Konsultasi Dokter Via Aplikasi</button>
+            </div>
+          </div>
         </div>
       </section>
       <!-- last Section result -->
     </main>
+
     <!-- footer -->
-    <footer>
-      <p>This footer ||</p>
+    <footer class="footer text-center">
+      <p>&copy; Fawaz | All Rights Reserved 2024</p>
+      <p>Download Aplikasi</p>
+      <div class="download-img">
+        <a href="#"><img src="./img/google.png" alt="google" /></a>
+        <a href="#"><img src="./img/app.png" alt="appStore" /></a>
+      </div>
     </footer>
+    <!-- last footer -->
+
     <script src="./js/app.js"></script>
   </body>
 </html>
